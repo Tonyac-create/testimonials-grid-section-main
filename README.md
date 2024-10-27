@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Tonyac-create/testimonials-grid-section-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://tonyac-create.github.io/testimonials-grid-section-main/)
 
 ## My process
 
