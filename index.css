@@ -1,0 +1,169 @@
+/* 
+  Credits : https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/*
+  1. La largeur total d'un élément incluant le padding et les bordures
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Enlève le margin par défaut
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Espacement entre les lignes
+    4. Améliore le rendu des polices (plus lisse, plus lisible) sur les navigateurs comme Chrome et Safari
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Empêche l'image de se développer en dehors de son conteneur
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Permet à ces éléments de correspondre avec la typographie de l'environnement
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. force le passage à la ligne pour un mot trop long
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --darkGrayishBlue: hsl(217, 19%, 35%);
+  --darkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+.barlow-semi-condensed-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--lightGrayishBlue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding: 50px 25px;
+}
+
+.all {
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 0.813rem;
+}
+
+.danielArticle {
+  grid-area: daniel;
+  background-color: var(--violet);
+  color: var(--white);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-position: top 0 right 10%;
+  background-repeat: no-repeat;
+}
+
+.headerArticle {
+  display: flex;
+  height: 45px;
+}
+
+.picturePerson {
+  border-radius: 100%;
+  margin-right: 12px;
+}
+
+.graduate {
+  opacity: 0.5;
+}
+
+.paragraph1 {
+  margin-top: 12px;
+  font-size: 1.25rem;
+}
+
+.paragraph2 {
+  margin-top: 12px;
+  opacity: 0.7;
+}
+
+.jonathanArticle {
+  grid-area: jonathan;
+  background-color: var(--darkGrayishBlue);
+  color: var(--white);
+}
+
+.jeanetteArticle {
+  grid-area: jeanette;
+  background-color: var(--white);
+  color: var(--darkGrayishBlue);
+}
+
+.kiraArticle {
+  grid-area: kira;
+  background-color: var(--white);
+  color: var(--darkGrayishBlue);
+}
+
+.patrickArticle {
+  grid-area: patrick;
+  background-color: var(--darkBlackishBlue);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+}
