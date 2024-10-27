@@ -164,7 +164,7 @@ body {
 }
 
 footer {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 @media (min-width: 768px) {
@@ -174,5 +174,6 @@ footer {
     grid-template-areas:
       "daniel daniel jonathan kira"
       "jeanette patrick patrick kira";
+    padding: 4.5rem;
   }
 }
