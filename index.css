@@ -158,6 +158,10 @@ body {
   color: var(--white);
 }
 
+footer {
+    margin-left: 40px;
+}
+
 @media (min-width: 768px) {
   .content {
     display: grid;
