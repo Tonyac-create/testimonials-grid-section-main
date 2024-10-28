@@ -95,29 +95,31 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
   justify-content: center;
   padding: 50px 25px;
+  max-width: 1400px;
 }
 
 .all {
   border-radius: 10px;
   padding: 25px;
   font-size: 0.813rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
 
 .danielArticle {
   grid-area: daniel;
   background-color: var(--violet);
   color: var(--white);
-  background-image: url("/images/bg-pattern-quotation.svg");
+  background-image: url("images/bg-pattern-quotation.svg");
   background-position: top 0 right 10%;
   background-repeat: no-repeat;
 }
 
 .headerArticle {
   display: flex;
-  height: 45px;
+  min-height: 45px;
 }
 
 .picturePerson {
